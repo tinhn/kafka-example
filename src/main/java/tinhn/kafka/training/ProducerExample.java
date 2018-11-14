@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * java -cp kafka-java-producer_2.0.0-1.0.jar tinhn.kafka.training.ProducerExample <brokers> <topics> <username> <password>
+ * java -cp kafka-java-example_2.0.0-1.0.jar tinhn.kafka.training.ProducerExample <brokers> <topics> <username> <password>
  */
 public class ProducerExample {
 

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>tinhn.training</groupId>
-    <artifactId>kafka-java-producer_${kafka.version}</artifactId>
+    <artifactId>kafka-java-example_${kafka.version}</artifactId>
     <version>1.0</version>
 
     <properties>

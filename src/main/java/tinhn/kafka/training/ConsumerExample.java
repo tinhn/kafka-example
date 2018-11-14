@@ -7,7 +7,7 @@ import org.apache.kafka.clients.consumer.KafkaConsumer;
 import java.util.*;
 
 /**
- * java -cp kafka-java-producer_2.0.0-1.0.jar tinhn.kafka.training.ConsumerExample <brokers> <topics> <username> <password>
+ * java -cp kafka-java-example_2.0.0-1.0.jar tinhn.kafka.training.ConsumerExample <brokers> <topics> <username> <password>
  */
 public class ConsumerExample {
     public static void main(String[] args) {
