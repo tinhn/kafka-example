@@ -3,6 +3,8 @@ package tinhn.kafka.training;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -11,6 +13,7 @@ import java.util.*;
  * java -cp kafka-java-example_2.0.0-1.0.jar tinhn.kafka.training.ProducerExample <brokers> <topics> <username> <password>
  */
 public class ProducerExample {
+    private static Logger logger = LoggerFactory.getLogger(ProducerExample.class);
 
     public static void main(String[] args) {
         if (args.length < 4) {
@@ -27,10 +30,11 @@ public class ProducerExample {
 
         String username = args[2];
         String password = args[3];
+        logger.info("Start example");
 
         Properties props = new MyKafkaConfig(username, password).GetKafkaProperties(brokers);
         //RUN_EXAMPLE01(props,topics);
-        RUN_EXAMPLE02(props,topics);
+        RUN_EXAMPLE02(props, topics);
     }
 
     public static void RUN_EXAMPLE01(Properties props, String topic) {
@@ -78,6 +82,7 @@ public class ProducerExample {
                             String strValue = strDate + "," + carList.get(rnd1.nextInt(carList.size()));
 
                             producer.send(new ProducerRecord<>(topic, uukey, strValue));
+                            System.out.println("Send data: " + strValue);
                         }
 
                         try {
