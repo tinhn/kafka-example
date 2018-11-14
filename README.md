@@ -1,6 +1,6 @@
 # Kafka example for Java
 
-Example code for connecting to a Apache Kafka cluster and authenticate with SSL_SASL and SCRAM. I have using CloudKarafka cluser service for demo 
+Example code for connecting to Apache Kafka cluster and authenticate with SSL_SASL and SCRAM. This demonstration have use CloudKarafka cluster service 
 
 
 ### Configure
